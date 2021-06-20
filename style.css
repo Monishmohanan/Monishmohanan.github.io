@@ -35,7 +35,7 @@
 
 .logo {
     max-width: 100%;
-    margin-left: 4%;
+    margin: 0 4%;
     margin-top: 2%;
     /* height: 60px; */
 }
@@ -82,7 +82,7 @@ nav a {
     font-size: 1vw;
     color: white;
     text-decoration: none;
-    line-height: 50px;
+    line-height: 3vw;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -99,38 +99,38 @@ nav .animation {
     transition: all .7s ease 0s;
 }
 a:nth-child(1) {
-    width: 100px;
+    width: 6.510416666666667vw;
 }
 nav .start-home, a:nth-child(1):hover~.animation{
-    width: 100px;
+    width: 6.510416666666667vw;
     left: 0;
 }
 a:nth-child(2) {
-    width: 110px;
+    width: 7.161458333333333vw;
 }
 nav .start-about, a:nth-child(2):hover~.animation{
-    width: 110px;
-    left: 100px;
+    width: 7.161458333333333vw;
+    left: 6.510416666666667vw;
 }
 a:nth-child(3) {
-    width: 100px;
+    width: 6.510416666666667vw;
 }
 nav .start-blog, a:nth-child(3):hover~.animation{
-    width: 100px;
-    left: 210px;
+    width: 6.510416666666667vw;
+    left: 13.671875vw;
 }
 a:nth-child(4) {
-    width: 160px;
+    width: 10.416666666666666vw;
 }
 nav .start-portfolio, a:nth-child(4):hover~.animation{
-    width: 160px;
-    left: 310px;
+    width: 10.416666666666666vw;
+    left: 20.182291666666668vw;
 }
 a:nth-child(5) {
-    width: 120px;
+    width: 7.8125vw;
 }
 nav .start-contact, a:nth-child(5):hover~.animation{
-    width: 120px;
-    left: 470px;
+    width: 7.8125vw;
+    left: 30.598958333333332vw;
 }
 

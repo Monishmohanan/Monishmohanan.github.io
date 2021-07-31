@@ -25,6 +25,12 @@
             .container p{
                 width: 50%;
             }
+            .sign-up{
+                flex-wrap: nowrap;
+            }
+            #sign-up-input{
+                flex-wrap: nowrap;
+            }
         }
         *{
             margin: 0;
@@ -112,6 +118,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
 
         }
 
@@ -119,15 +126,22 @@
             font-weight: bold;
             font-size: 2rem;
             font-family: cursive;
+            margin-bottom: 1%;
 
         }
 
-        .sign-up input[name="email"]{
-            padding: 3.5%;
+        #sign-up-input{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #sign-up-input input[name="email"]{
+            padding: 2%;
             margin-right: 2%;
             border-radius: 10px;
             border: none;
-            width: 30vw;
+            width: 100%;
+            margin-bottom: 5%;
         }
 
         .sign-up-btn{
@@ -219,8 +233,8 @@
         <div>
             <p>Sign Up for the Course</p>
         </div>
-        <div>
-            <form class="sign-up">
+        <div id="sign-up-input">
+            <form>
                 <input type="email" placeholder="Enter your email id" name="email">
                 <input type="submit" name="signup" class="sign-up-btn">
             </form>

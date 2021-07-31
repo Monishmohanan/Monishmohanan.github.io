@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Training</title>
+    <style>
+        @media (min-width: 768px) {
+            #learn-content{
+                flex-basis: 50%;
+            }
+            #learn{
+                flex-wrap: nowrap;
+            }
+            #learn-img{
+                flex-basis: 50%;
+            }
+            #learn-img img{
+                max-width: 100%;
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive, sans-serif;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: teal;
+            padding: 5%;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        .flex-div{
+            display: flex;
+            align-items: center;
+        }
+
+        nav{
+            padding: 10px 2%;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-right img{
+            width: 25px;
+            margin-right: 25px;
+        }
+
+        .nav-right .user-icon{
+            width: 35px;
+            border-radius: 50%;
+            margin-right: 0;
+        }
+
+        .nav-left a{
+            margin-right: 10%;
+            font-weight: bold;
+        }
+
+        .nav-right a{
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        a:hover{
+            background-color: #33A0A0;
+            color: white;
+        }
+
+        .container{
+            font-size: 3rem;
+            background-color: #004444;
+            color: white;
+            text-align: center;
+            padding: 2%;
+            margin: 0, 5%;
+        }
+
+        .container p{
+            font-size: 1rem;
+            width: 50%;
+            margin: 0 25%;
+            margin-top: 1%;
+            font-family: cursive;
+        }
+        h1{
+            font-family: "calibri", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .sign-up{
+            padding: 2%;
+            background-color: #009696;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .sign-up p{
+            font-weight: bold;
+            font-size: 2rem;
+            font-family: cursive;
+
+        }
+
+        .sign-up input[name="email"]{
+            padding: 3.5%;
+            margin-right: 2%;
+            border-radius: 10px;
+            border: none;
+            width: 30vw;
+        }
+
+        .sign-up-btn{
+            padding: 2.5%;
+            background-color: black;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            font-family: "calibri";
+        }
+
+        .sign-up-btn:hover{
+            background-color: teal;
+            cursor: pointer;
+        }
+
+        #learn{
+            display: flex;
+            align-items: center;
+            padding: 1% 5%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #learn-content{
+            max-width: 100%;
+        }
+
+        #learn-img img{
+            max-width: 100%;
+        }
+
+        #learn-content h2{
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 1em;
+            color: #004545;
+        }
+
+        #learn-content p{
+            font-family: cursive;
+            font-size: 1.5rem;
+            margin-bottom: 1em;
+        }
+
+        .btn{
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 1.5%;
+            border-radius: 10px;
+            color: white;
+            background-color: teal;
+        }
+
+        .btn:hover{
+            background-color: black;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <!-- <img src="assets/logo.png" alt="python logo" class="user-icon"> -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            
+        </div>
+        <div class="nav-middle"></div>
+        <div class="nav-right flex-div">
+            <a href="#">Contact</a>
+            <img src="assets/logo.png" alt="python logo" class="user-icon">
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>PYTHON TRAINING</h1>
+        <p class="some">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum praesentium ipsa ipsum quidem similique commodi debitis provident dolores ea officia.
+        </p>
+    </div>
+
+    <section class="sign-up">
+        <div>
+            <p>Sign Up for the Course</p>
+        </div>
+        <div>
+            <form class="sign-up">
+                <input type="email" placeholder="Enter your email id" name="email">
+                <input type="submit" name="signup" class="sign-up-btn">
+            </form>
+        </div>
+    </section>
+
+    <section id="learn">
+        <div id="learn-content">
+            <h2>What You'll learn?</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, amet? Saepe quibusdam quam porro laboriosam facere voluptate molestias aperiam magni, nostrum nobis similique mollitia voluptatibus voluptatem, eveniet commodi quae aspernatur vel! Temporibus ipsa aliquid molestias fugiat id totam dolor suscipit distinctio tempora blanditiis officia commodi, non in illo esse alias!
+            </p>
+            <button type="submit" class="btn">
+                Read more
+            </button>
+        </div>
+        <div id="learn-img">
+            <img src="assets/undraw_researching_22gp.svg" alt="learning image">
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+</body>
+</html>
